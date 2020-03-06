@@ -2,6 +2,15 @@
 
 num = 407
 
+class notUse():
+    """One new class and not in use"""
+    pass
+
+    def asd(a):
+        """Most important function"""
+        pass
+
+
 # To take input from the user
 #num = int(input("Enter a number: "))
 
