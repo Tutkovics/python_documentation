@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /media/tutkovics/ac83ef47-9d5a-49bf-83f2-791a94dcfef7/Egyetem/Tanulási/Msc_1/Agile/python_documentation/python/bin/python3.7 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pylint import run_symilar
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(run_symilar())
