@@ -155,19 +155,132 @@
 <span id="main-module"></span><h1>main module<a class="headerlink" href="#module-main" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="main.main">
-<em class="property">class </em><code class="sig-prename descclassname">main.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><em class="sig-param">training_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">main.</code><code class="sig-name descname">main</code><a class="headerlink" href="#main.main" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>One new class and not in use</p>
 <dl class="method">
-<dt id="main.main.asd">
-<code class="sig-name descname">asd</code><span class="sig-paren">(</span><em class="sig-param">a</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.asd" title="Permalink to this definition">¶</a></dt>
-<dd><p>Most important function</p>
-<dl class="field-list simple">
+<dt id="main.main.classify">
+<code class="sig-name descname">classify</code><span class="sig-paren">(</span><em class="sig-param">vocabularyList</em>, <em class="sig-param">pWordsSpamicity</em>, <em class="sig-param">pWordsHealthy</em>, <em class="sig-param">pSpam</em>, <em class="sig-param">testWords</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.classify" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>training_dir</strong> – path of training directory with subdirectories</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vocabularyList</strong> – </p></li>
+<li><p><strong>pWordsSpamicity</strong> – </p></li>
+<li><p><strong>pWordsHealthy</strong> – </p></li>
+<li><p><strong>pSpam</strong> – </p></li>
+<li><p><strong>testWords</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
 </dd>
 </dl>
-<p>‘/ham’ and ‘/spam’</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.createVocabularyList">
+<code class="sig-name descname">createVocabularyList</code><span class="sig-paren">(</span><em class="sig-param">smsWords</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.createVocabularyList" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>smsWords</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.getTrainedModelInfo">
+<code class="sig-name descname">getTrainedModelInfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.main.getTrainedModelInfo" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.getVocabularyList">
+<code class="sig-name descname">getVocabularyList</code><span class="sig-paren">(</span><em class="sig-param">fileName</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.getVocabularyList" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fileName</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.loadSMSData">
+<code class="sig-name descname">loadSMSData</code><span class="sig-paren">(</span><em class="sig-param">fileName</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.loadSMSData" title="Permalink to this definition">¶</a></dt>
+<dd><p>General description of functionGeneral description of functionGeneral description of functionGeneral description of function
+:param fileName:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.setOfWordsListToVecTor">
+<code class="sig-name descname">setOfWordsListToVecTor</code><span class="sig-paren">(</span><em class="sig-param">vocabularyList</em>, <em class="sig-param">smsWordsList</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.setOfWordsListToVecTor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vocabularyList</strong> – </p></li>
+<li><p><strong>smsWordsList</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.setOfWordsToVecTor">
+<code class="sig-name descname">setOfWordsToVecTor</code><span class="sig-paren">(</span><em class="sig-param">vocabularyList</em>, <em class="sig-param">smsWords</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.setOfWordsToVecTor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vocabularyList</strong> – </p></li>
+<li><p><strong>smsWords</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.textParser">
+<code class="sig-name descname">textParser</code><span class="sig-paren">(</span><em class="sig-param">text</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.textParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>General description of function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – lorem ipsum come from…</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>something</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.main.trainingNaiveBayes">
+<code class="sig-name descname">trainingNaiveBayes</code><span class="sig-paren">(</span><em class="sig-param">trainMarkedWords</em>, <em class="sig-param">trainCategory</em><span class="sig-paren">)</span><a class="headerlink" href="#main.main.trainingNaiveBayes" title="Permalink to this definition">¶</a></dt>
+<dd><p>spamicity：P（Wi|S）</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>trainMarkedWords</strong> – </p></li>
+<li><p><strong>trainCategory</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
