@@ -5,3 +5,4 @@ python_documentation
    :maxdepth: 4
 
    main
+   parser
