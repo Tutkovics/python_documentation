@@ -3,22 +3,12 @@
 import numpy as np
 import sys
 import os
+import parser
 import re
 
 class main():
     #  preprocess; get rid of white space; convert upper case to lower case
-    def textParser(self, text):
-        """
-        General description of function 
 
-        :param text: lorem ipsum come from...
-        :return: something 
-        """
-        # regext defining what to consider as a word 
-        word_regex = re.compile("[a-zA-Z']+(?:-[a-zA-Z']+)?")
-        words = word_regex.split(text)
-        words = [word.lower() for word in words if len(word) > 0]
-        return words
 
     # classify tags，1: trash SMS，0: normal SMS
     def loadSMSData(self,fileName):
