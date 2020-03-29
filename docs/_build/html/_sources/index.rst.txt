@@ -9,7 +9,9 @@ Welcome to Agile_HW_test's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+   
+   modules
+   license
 
 
 Indices and tables
