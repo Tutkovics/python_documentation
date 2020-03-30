@@ -2,12 +2,14 @@ import re
 
 
 def textParser(self, text):
-        """
-        General description of function 
-        :param self: 
-        :param text: lorem ipsum come from...
-        :return: something 
-        """
+    """General description of my text parser function
+
+    :param self: default parameter
+    :param text: lorem ipsum come from other method
+    :type text: string
+    :return: something importanat
+    :rtype: int
+    """
     
     # regex defining what to consider as a word 
     word_regex = re.compile("[a-zA-Z']+(?:-[a-zA-Z']+)?")

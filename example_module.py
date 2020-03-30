@@ -23,26 +23,28 @@ Written by Matthew John Hayes
 
 CONSTANT = 'example constant value'
 
+
 class ExampleModule(object):
     """
     This is the main class of example_module. It doesn't do anything useful
     other than show how classes are documented by autodoc
     """
+
     def __init__(self):
         """
         Initialise the ExampleModule class
         """
-        self.class_variable = 1
+        self.class_variable = "RANDOM"
 
     def run(self):
         """
         Run the ExampleModule instance
         """
-        print "ExampleModule is running!"
-        print "Constant is", CONSTANT
-        print "Class Variable is", self.class_variable
+        print("ExampleModule is running!")
+        print("Constant is", CONSTANT)
+        print("Class Variable is" + self.class_variable)
         self.increment(5)
-        print "Class Variable is", self.class_variable
+        print("Class Variable is" + self.class_variable)
 
     def increment(self, value):
         """
@@ -58,8 +60,9 @@ class ExampleModule(object):
         """
         self.class_variable += 1
 
+
 if __name__ == '__main__':
-    #*** Instantiate the ExampleModule class:
+    # *** Instantiate the ExampleModule class:
     example_module = ExampleModule()
-    #*** Start ExampleModule:
+    # *** Start ExampleModule:
     example_module.run()
